@@ -1,0 +1,141 @@
+@media screen and (min-width: 480px) {
+ 
+  /***********************************
+  TWO COLUMN LAYOUT
+  ***********************************/
+  
+  #primary {
+    width: 50%;
+    float: left;
+  }
+
+  #secondary {
+    width: 40%;
+    float: right;
+  }
+  
+ 
+  
+ /***********************************
+  PAGE: GALLERY OR PORTFOLIO
+  ***********************************/
+  
+      /***********************************
+      3 * ?
+      "Each item has a margin of 2.5 on all sides"
+      "if we add the left and right side together"
+      "2.5 plus 2.5 that's a total of 5 or 5%. So"
+      3 * 5 = 15 so is 15%
+      100% - 15% = 85%
+      85 / 3 = 28.33333333333333
+      ***********************************/
+  
+  /***********************************
+  THREE COLUMN LAYOUT
+  ***********************************/
+  
+  #gallery li {
+    width: 28.33333333333333%;
+  }
+  
+  #gallery li:nth-child(4n) {
+    clear: left;
+  }
+  
+  
+  
+  /***********************************
+  PAGE: ABOUT
+  ***********************************/
+  
+  .profile-photo {
+    float: left;
+    margin: 0 5% 80px 0;
+  }
+  
+  
+}
+
+@media screen and (min-width: 660px) {
+  
+  /***********************************
+  HEADER
+  ***********************************/
+  
+  nav {
+    background: none;
+    float: right;
+    font-size: 1.125em;
+    margin-right: 5%;
+    text-align: right;
+    width: auto;
+  }
+
+  /*nav li {
+    width: initial;
+    height: initial;
+    float: initial;   
+  }*/
+  
+  #logo {
+    float: left;
+    margin-left: 5%;
+    text-align: left;
+    width: auto;
+    margin-right: 0;
+  }
+  
+  h1 {
+    font-size: 2.5em;
+  }
+  
+  h2 {
+    font-size: 0.825em;
+    margin-bottom: 20px;
+  }
+  
+  header {
+    border-bottom: 5px solid #599a68;
+    margin-bottom: 60px;
+  }
+}
+
+
+@media screen and (min-width: 900px) {
+
+/***********************************
+  PAGE: ABOUT
+  ***********************************/
+
+.profile-photo {
+  transition: transform .5s;
+}
+
+.profile-photo:hover {
+  transform: scale(1.6);
+ }
+
+.social-icon {
+  transition: transform .5s;
+}
+
+.social-icon:hover {
+  transform: scale(2);
+ }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
